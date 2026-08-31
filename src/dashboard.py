@@ -66,7 +66,7 @@ st.subheader("🔍 Investigate a Transaction")
 
 txn_id = st.text_input("Transaction ID", value=flagged.iloc[0]["transaction_id"] if len(flagged) else "")
 use_live_agent = st.checkbox(
-    "Use live Claude agent (requires ANTHROPIC_API_KEY)",
+    "Enable live AI investigation",
     value=False,
     help="If unchecked, uses the offline rule-based mock agent for demo purposes."
 )
